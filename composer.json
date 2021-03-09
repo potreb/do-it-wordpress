@@ -1,19 +1,35 @@
 {
-  "name": "potreb/do-it-wordpress",
-  "description": "A simple library to generate custom post types, taxonomies for WordPress",
-  "minimum-stability": "stable",
-  "license": "proprietary",
-  "authors": [
-    {
-      "name": "potreb",
-      "email": "email@example.com"
+    "name": "potreb/do-it-wordpress",
+    "description": "A simple library to generate custom post types, taxonomies for WordPress",
+    "license": "MIT",
+    "keywords": [
+        "wordpress",
+        "woocommerce",
+        "woocommerce invoices",
+        "invoices",
+        "wordpress invoices"
+    ],
+    "homepage": "https://github.com/potreb/do-it-wordpress",
+    "prefer-stable": true,
+    "minimum-stability": "stable",
+    "config": {
+        "sort-packages": true,
+        "platform": {
+            "php": "7.0"
+        }
+    },
+    "authors": [
+        {
+            "name": "potreb",
+            "email": "potreb@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "DoItWP\\": "src"
+        }
+    },
+    "require": {
+        "php": ">=7.0"
     }
-  ],
-  "autoload": {
-    "psr-4": {
-      "DoItWP\\": "src"
-    }
-  },
-  "require": {
-  }
 }

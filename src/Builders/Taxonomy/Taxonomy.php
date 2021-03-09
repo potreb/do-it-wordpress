@@ -65,7 +65,7 @@ final class Taxonomy implements RegisterInterface {
      * @throws BuilderException Throw exception when slug is not valid.
      */
     private function set_taxonomy_slug( string $taxonomy_slug ) {
-        $reserved_terms = ( new ReservedTerms() )->get();
+        $reserved_terms = ReservedTerms::get();
         if ( in_array( $taxonomy_slug, $reserved_terms, true ) ) {
             throw new BuilderException( 'Defined taxonomy slug is prohibited. Use another!' );
         }

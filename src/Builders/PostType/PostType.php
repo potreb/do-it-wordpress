@@ -50,12 +50,12 @@ final class PostType implements RegisterInterface {
 	 * @return PostType
 	 */
 	private function set_slug( string $post_type_slug ): PostType {
-		$reserved_terms = ( new ReservedPostTypes() )->get();
+		$reserved_terms = ReservedPostTypes::get();
 		if ( in_array( $post_type_slug, $reserved_terms, true ) ) {
 			throw new BuilderException( 'Defined post type key is prohibited. Use another!' );
 		}
 		if ( strlen( $post_type_slug ) > 20 ) {
-			throw new BuilderException( 'The defined post type key has more than 32 characters.' );
+			throw new BuilderException( 'The defined post type key has more than 20 characters.' );
 		}
 		$this->args['slug'] = $post_type_slug;
 
