@@ -1,0 +1,19 @@
+{
+  "name": "potreb/do-it-wordpress",
+  "description": "A simple library to generate custom post types, taxonomies for WordPress",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "potreb",
+      "email": "email@example.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "DoItWP\\": "src"
+    }
+  },
+  "require": {
+  }
+}
