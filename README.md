@@ -1,2 +1,3 @@
-# do-it-wordpress
-I'll do it for you WordPress
+# I'll do it for you WordPress
+
+A simple library to generate custom types, taxonomies for WordPress
